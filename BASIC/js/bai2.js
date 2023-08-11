@@ -8,18 +8,20 @@
 // ○ Cho "heLlo riKkei academy"; In ra "Hello Rikkei Academy”
 
 let string = " this is A tEst ";
-// console.log(string);
+console.log(string);
 function capitalizeFirstChar() {
     let array = string.trim().toLowerCase().split(" ");
-    // console.log(array);
     for (let i = 0; i < array.length; i++) {
         let word = array[i].split("");
+        console.log(word);
         word[0] = word[0].toUpperCase();
         array[i] = word.join("");
     }
     return array.join(" ");
 }
 console.log(capitalizeFirstChar());
+
+
 
 
 
