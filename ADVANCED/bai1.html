@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bai1.css">
+</head>
+
+<body>
+    <h1>Rikkei Academy</h1>
+    <div class="list_info">
+        <div class="info">
+            <h2>Thông tin học viên</h2>
+            <form action="" id="form_info">
+                <div class="info_input">
+                    <label for="name">Họ và tên</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="info_input">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="info_input">
+                    <label for="phone">Số điện thoại</label>
+                    <input type="text" name="phone" id="phone" required>
+                </div>
+                <div class="info_input">
+                    <label for="address">Quê quán</label>
+                    <input type="text" name="address" id="address" required>
+                </div>
+                <div class="info_input1">
+                    <label for="gender">Giới tính</label>
+                    <input type="radio" name="gender" id="male">
+                    <span>Nam</span>
+                    <input type="radio" name="gender" id="female">
+                    <span>Nữ</span>
+                </div>
+                <span id="errMess" style="color: red;"></span>
+                <button id="btn_save">Lưu lại</button>
+            </form>
+        </div>
+        <div class="lists">
+            <h2>Danh sách học viên</h1>
+                <form action="" id="form_lists">
+                    <label for="search">Tìm kiếm theo tên học viên</label>
+                    <input type="text" name="search" id="input_search">
+                    <button id="btn_search" type="button" onclick="searchByName()">Search</button>
+                </form>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Họ và tên</th>
+                            <th>Email</th>
+                            <th>Điện thoại</th>
+                            <th>Địa chỉ</th>
+                            <th>Gender</th>
+                            <th colspan="2">Hành động</th>
+                            <th><button id="btn_sort" onclick="sortStudent()">Sắp xếp (alpha b)</button></th>
+                        </tr>
+                    </thead>
+                    <tbody id="t-body">
+
+                    </tbody>
+                </table>
+        </div>
+    </div>
+
+    <script src="js/bai1.js"></script>
+</body>
+
+</html>

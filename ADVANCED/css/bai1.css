@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.list_info {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    text-align: center;
+    padding: 15px;
+}
+h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.info {
+    border: 1px solid #eee;
+    padding: 15px;
+    width: 30%;
+    margin-top: 10px auto;
+   
+}
+
+.info_input {
+    width: 80%;
+    margin: 10px 0;
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.info_input input {
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    width: 70%;
+}
+
+#form_info{
+    margin: 10px auto;
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#btn_save:hover,
+#btn_search:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#btn_save {
+    width: 80%;
+    padding: 10px;
+}
+
+#btn_edit {
+    background-color: green;
+    width: 70%;
+}
+
+#btn_delete {
+    background-color: orangered;
+    width: 70%;
+}
+
+table,
+tr,
+th,
+td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+.lists {
+    border: 1px solid #eee;
+    width: 60%;
+    padding: 10px;
+}
+#input_search{
+    padding: 10px;
+    width: 50%;
+}
+table{
+    width: 100%;
+    margin-top: 15px;
+}
+tr, th, th{
+    padding: 10px;
+    text-align: center;
+}
